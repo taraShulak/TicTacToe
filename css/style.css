@@ -1,0 +1,168 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+.wrapper {
+  padding-top: 20px;
+  width: 98vw;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+@media (max-width: 500px) {
+  .wrapper {
+    flex-direction: column;
+    width: 95vw;
+  }
+}
+
+.board {
+  width: 45vw;
+  height: 45vw;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  border: 5px solid #000;
+  font-size: 54px;
+  font-weight: 700;
+}
+@media (max-width: 500px) {
+  .board {
+    width: 95vw;
+    height: 95vw;
+  }
+}
+
+.square {
+  display: inline-grid;
+  text-align: center;
+  align-items: center;
+  border: 2px solid red;
+  text-align: center;
+}
+.square:hover {
+  cursor: pointer;
+}
+
+.notation {
+  width: 50%;
+  font-size: 44px;
+  line-height: 34px;
+}
+@media (max-width: 500px) {
+  .notation {
+    width: 95vw;
+  }
+}
+
+.new-game {
+  padding: 20px 0;
+}
+
+.new-game-btn {
+  background-color: rgb(230, 104, 104);
+}
+
+.hard-level-color {
+  background-color: rgb(230, 104, 104);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 24px;
+}
+
+button {
+  font-size: 22px;
+  padding: 5px;
+  margin: 5px;
+}
